@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    background-color: #5c9f5c;
+    color: white;
+}
+
+h2 {
+    color: #5c9f5c;
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#comida {
+    /*aqui agregare mis estilos*/
+    padding: 20px; /*padding */
+}
+
+
+#comida img {
+
+    width: 50%; 
+    margin: 20px;
+    height: 60px 10px;
+    border-radius: 10px;
+    padding-left: 200px;
+}
+
+#seccion3 {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure {
+    margin: 20px;
+    text-align: center; /* Centra el texto de la descripción */
+}
+
+#seccion3 img {
+    width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    max-width: 200px; /* Limita el ancho máximo de la imagen */
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 10px; /* Espacio entre la imagen y la descripción */
+    font-style: italic;
+    color: #555;
+}
+
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+a {
+    color: #020202;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #5c9f5c;  
+    color: aliceblue;  
+    text-align: center; 
+    padding: 20px 0;  
+    position: relative;  
+    bottom: 0; 
+    width: 100%; 
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Perfil de Usuario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <a href="index.html">Volver al inicio</a>
+    <div class="container">
+        <h2>Formulario de Perfil de Usuario</h2>  
+        <form>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label> 
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +57 310 220 4504">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="genero">Género:</label>
+            <select name="genero" id="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="biografia">Biografía:</label>
+            <textarea name="biografia" id="biografia" rows="5" placeholder="Cuéntanos sobre ti..." required></textarea>
+
+            <fieldset>
+                <legend>Intereses:</legend>
+                <label><input type="checkbox" name="intereses" value="Tecnologia"> Tecnología</label><br>
+                <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label><br>
+                <label><input type="checkbox" name="intereses" value="viajes"> Viajes</label><br>
+                <label><input type="checkbox" name="intereses" value="musica"> Música</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias de comunicacion:</legend>
+                <label><input type="radio" name="comunication" value="correo"> Correo Electrónico</label><br>
+                <label><input type="radio" name="comunication" value="mensaje"> Mensaje de texto</label><br>
+                <label><input type="radio" name="comunication" value="telefono"> Teléfono</label><br>
+                <label><input type="radio" name="comunication" value="otro"> Otro</label><br>
+            </fieldset>
+
+            <label for="pais">Pais de residencia:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <label for="codigo_postal">Codigo Postal:</label>
+            <input type="number" id="codigo_postal" name="codigo_postal" required>
+
+            <label for="hobbies">Hobbies:</label>
+            <select name="hobbies" id="hobbies" multiple>
+                <option value="futbol">Futbol</option>
+                <option value="musica">Musica</option>
+                <option value="peliculas">Peliculas</option>
+            </select>
+
+            <!-- Nueva sección: Mis Sueños, aqui podre permitirles a los compañeros de clase que puedan agregar sus sueños -->
+            <section id="mis-suenos">
+                <h2>Mis Sueños</h2>
+                <p>Describe tus sueños y aspiraciones.</p>
+                <textarea name="mis_suenos" id="mis_suenos" rows="3" placeholder="¿Cuáles son tus sueños?" required></textarea>
+            </section>
+
+            <!-- Nueva sección: Mis Logros aqui podre permitirles a los compañeros de clase que puedan agregar sus logros -->
+            <section id="mis-logros">
+                <h2>Mis Logros</h2>
+                <p>Enumera algunos de tus logros más significativos.</p>
+                <textarea name="mis_logros" id="mis_logros" rows="3" placeholder="¿Cuáles son tus logros?" required></textarea>
+            </section>
+
+            <label for="imagen">Sube una imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+
+            <section id="enviar-formulario">
+                <h2>Enviar Formulario</h2>
+                    <p>Una vez que hayas completado todos los campos, puedes enviar el formulario.</p>
+                     <button type="submit">Enviar</button>
+                     <button type="reset">Limpiar</button>
+</section>
+    <footer>
+            <p>&copy; 2024 Mi Pagina Web. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:info@mipagina.com">info@mipagina.com</a></p>
+        </footer>
+    </body>
+    </html>
